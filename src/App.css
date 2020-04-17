@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.imageViewer-controls {
+  padding: 0.5rem;
+  background-color: bisque;
+  border-style: inset;
+  border-color: burlywood;
+  border-width: thick;
+  display: flex;
+}
+.imageViewer-conainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.image-container {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.zoom-ize {
+  transform-origin: top left;
+  display: inline-block;
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.image {
+  vertical-align: top;
+}
+
+.viewer-container {
+  width: 80%;
+  height: 100%;
+}
+
+.json-container {
+  width: 20%;
+  height: 100%;
+  background-color: burlywood;
+  overflow: auto;
+  padding: 0.5rem;
+  border-style: double;
+  border-width: thick;
+}
+.json-container textarea {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+.force-render {
+  opacity: 0;
+}
